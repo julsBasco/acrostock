@@ -148,7 +148,8 @@ function App() {
         </tbody>
       </Table>
 
-      <Button variant="warning" type="button" onClick={loadUsers}>Load Table</Button>
+    {/* Removed the Load Table button */}
+    {/* This is a comment */}
 
 
 
