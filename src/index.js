@@ -4,6 +4,8 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthProvider } from "./context/AuthContext";
 
+//this is for the test of forking and pulling and pull request
+
 ReactDOM.render(
   <React.StrictMode>
     <AuthProvider>
