@@ -17,7 +17,7 @@ const Address = () => {
         </div>
         <div className="col">
           <Form.Label>Baranggay</Form.Label>
-          <DropdownItems title="--select type--" item={["item1", "item2"]} />
+          <Form.Control type="text" placeholder="Baranggay" />
         </div>
       </div>
     </Form.Group>
