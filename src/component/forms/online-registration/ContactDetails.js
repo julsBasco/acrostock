@@ -1,4 +1,6 @@
 import React from "react";
+import DropdownItems from "../../DropdownItems";
+import { Form } from "react-bootstrap";
 
 const ContactDetails = () => {
   return (
