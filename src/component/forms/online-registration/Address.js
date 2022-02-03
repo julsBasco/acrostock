@@ -33,6 +33,7 @@ const Address = () => {
         <div className="col">
           <Form.Label>Zip Code</Form.Label>
           <Form.Label type="number" placeholder="Zip Code" />
+         
         </div>
       </div>
 
