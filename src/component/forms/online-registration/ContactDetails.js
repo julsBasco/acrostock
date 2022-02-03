@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactDetails = () => {
   return (
-    <Form.Group>
+    
       <div className="row">
         <div className="col">
           <Form.Label>Mobile Number</Form.Label>
@@ -10,10 +10,10 @@ const ContactDetails = () => {
         </div>
         
         </div>
-      </div>
+      
 
 
-    </Form.Group>
+    
   );
 
 
