@@ -9,16 +9,19 @@ const Login = () => {
         style={{ height: "100vh" }}
         className="row align-items-center justify-content-center"
       >
-        <div className="col h-100 bg-primary d-flex justify-content-center align-items-center">
+
+        <div className="col h-200 bg-primary d-flex justify-content-center align-items-center">
           <div className="">
             <img
               className="img-fluid"
-              src="https://cdn-prod.medicalnewstoday.com/content/images/articles/325/325466/man-walking-dog.jpg"
-              alt="a figure of a man with a dog in the mountains"
+              src="https://3401zs241c1u3z7ulj3z6g7u-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/sean-pollock-PhYq704ffdA-unsplash-scaled-1-980x654.jpg"
+              alt="acrostockbuilding"
             />
           </div>
         </div>
-        <div className="col h-100 d-flex justify-content-center align-items-center">
+
+        <div className="col h-200 d-flex justify-content-center align-items-center">
+
           <div className="container-flush ">
             <img
               className="img-fluid rounded-circle size-small"
