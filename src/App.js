@@ -1,10 +1,11 @@
 import React from "react";
 import Login from "./pages/Login";
+import OnlineRegistration from "./pages/OnlineRegistration";
 
 const App = () => {
   return (
     <div>
-      <Login />
+      <OnlineRegistration />
       {/* this is the correct item */}
     </div>
   );
