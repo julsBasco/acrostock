@@ -1,5 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
+import Address from "../component/forms/online-registration/Address";
 import BasicInformation from "../component/forms/online-registration/BasicInformation";
 
 const OnlineRegistration = () => {
@@ -7,8 +8,14 @@ const OnlineRegistration = () => {
     <div>
       <div className="container">
         <Form>
-          <h1 style={{ color: "maroon" }}>BASIC INFORMATION</h1>
-          <BasicInformation />
+          <div className="m-4">
+            <h1 style={{ color: "maroon" }}>BASIC INFORMATION</h1>
+            <BasicInformation />
+          </div>
+          <div className="m-4">
+            <h1 style={{ color: "maroon" }}>ADDRESS</h1>
+            <Address />
+          </div>
         </Form>
       </div>
     </div>
