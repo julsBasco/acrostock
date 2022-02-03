@@ -22,7 +22,7 @@ const BasicInformation = () => {
             <Form.Label>Section or Course</Form.Label>
             <DropdownItems
               title="--Select sec/course--"
-              item={["BSEEEE", "BSIT", "BSHRM"]}
+              item={["BSED", "BSIT", "BSHRM"]}
             />
           </div>
           <div className="col">
@@ -63,7 +63,7 @@ const BasicInformation = () => {
             <Form.Label>Civil Status</Form.Label>
             <DropdownItems
               title="--Select Status--"
-              item={["sigle", "married", "widowed"]}
+              item={["single", "married", "widowed"]}
             />
           </div>
           <div className="col">
