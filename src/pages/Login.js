@@ -9,6 +9,7 @@ const Login = () => {
         style={{ height: "100vh" }}
         className="row align-items-center justify-content-center"
       >
+
         <div className="col h-200 bg-primary d-flex justify-content-center align-items-center">
           <div className="">
             <img
@@ -18,7 +19,9 @@ const Login = () => {
             />
           </div>
         </div>
+
         <div className="col h-200 d-flex justify-content-center align-items-center">
+
           <div className="container-flush ">
             <img
               className="img-fluid rounded-circle size-small"

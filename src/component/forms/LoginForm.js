@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Button, Dropdown } from "react-bootstrap";
+
 const LoginForm = () => {
   return (
     <Form>
@@ -16,21 +17,17 @@ const LoginForm = () => {
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
       <Dropdown>
-    <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
-      Sign In as
-    </Dropdown.Toggle>
+        <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
+          Sign In as
+        </Dropdown.Toggle>
 
-    <Dropdown.Menu variant="dark">
-      
-      
-    
-      <Dropdown.Item href="#/action-2">Student</Dropdown.Item>
-      <Dropdown.Item href="#/action-3">School Admin</Dropdown.Item>
-      
-      <Dropdown.Item href="#/action-4">Teachers</Dropdown.Item>
-    </Dropdown.Menu>
-  </Dropdown>
+        <Dropdown.Menu variant="dark">
+          <Dropdown.Item href="#/action-2">Student</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">School Admin</Dropdown.Item>
 
+          <Dropdown.Item href="#/action-4">Teachers</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
