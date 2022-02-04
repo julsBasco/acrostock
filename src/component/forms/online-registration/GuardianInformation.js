@@ -1,7 +1,7 @@
 import React from "react";
 
 const GuardianInformation = () => {
-
+return (
 
 <Form.Group>
           <div className="m-4">
@@ -12,7 +12,7 @@ const GuardianInformation = () => {
 
         </Form.Group>
 
-
+);
   
 };
 
