@@ -19,7 +19,7 @@ const OnlineRegistration = () => {
 
           <div className="m-4">
             <h1 style={{ color: "maroon" }}>CONTACT DETAILS</h1>
-            <BasicInformation />
+            <ContactDetails />
           </div>
 
         </Form>
