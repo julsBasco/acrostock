@@ -12,6 +12,15 @@ function ContactDetails() {
           <Form.Control type="number" placeholder="Mobile number" />
         </div>
 
+        <div className="col">
+            <Form.Label>Email Address</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Email"
+            />
+          </div>
+
+
       </div>
     </Form.Group>
   );
