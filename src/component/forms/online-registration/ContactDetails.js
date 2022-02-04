@@ -11,7 +11,7 @@ function ContactDetails() {
           <Form.Label>Mobile Number</Form.Label>
           <Form.Control type="number" placeholder="Mobile number" />
         </div>
-
+</div>
         <div className="col">
             <Form.Label>Email Address</Form.Label>
             <Form.Control
@@ -29,11 +29,8 @@ function ContactDetails() {
           </div>
 
 
-      </div>
-    </Form.Group>
+      </Form.Group>
   );
-
-
 
 }
 
