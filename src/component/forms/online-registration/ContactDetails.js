@@ -20,6 +20,14 @@ function ContactDetails() {
             />
           </div>
 
+          <div className="col">
+            <Form.Label>FB Account</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="FB Account"
+            />
+          </div>
+
 
       </div>
     </Form.Group>
