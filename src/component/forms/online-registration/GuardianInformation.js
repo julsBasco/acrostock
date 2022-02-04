@@ -1,6 +1,6 @@
 import React from "react";
 
-const GuardianInformation = () => {
+function GuardianInformation() {
 return (
 
 <Form.Group>
