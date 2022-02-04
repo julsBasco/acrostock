@@ -1,5 +1,4 @@
 import React from "react";
-import DropdownItems from "../online-registration/ContactDetails.js";
 import { Form } from "react-bootstrap";
 
 function ContactDetails() {
