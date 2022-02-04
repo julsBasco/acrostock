@@ -1,7 +1,7 @@
 import React from "react";
 
 const GuardianInformation = () => {
-  return <div>
+
 
 <Form>
           <div className="m-4">
@@ -13,7 +13,7 @@ const GuardianInformation = () => {
         </Form>
 
 
-  </div>;
+  
 };
 
 export default GuardianInformation;
