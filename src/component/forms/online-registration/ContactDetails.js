@@ -9,7 +9,7 @@ function ContactDetails() {
       <div className="row">
         <div className="col">
           <Form.Label>Mobile Number</Form.Label>
-          <Form.Control type="text" placeholder="Mobile number" />
+          <Form.Control type="number" placeholder="Mobile number" />
         </div>
 
       </div>
