@@ -1,6 +1,8 @@
 import React from "react";
+import { Form } from "react-bootstrap";
+import DropdownItems from "../../DropdownItems";
 
-function GuardianInformation() {
+const GuardianInformation = () => {
 return (
 
 <Form.Group>
