@@ -5,7 +5,6 @@ import BasicInformation from "../component/forms/online-registration/BasicInform
 import ContactDetails from "../component/forms/online-registration/ContactDetails";
 import GuardianInformation from "../component/forms/online-registration/GuardianInformation";
 
-
 const OnlineRegistration = () => {
   return (
     <div>
@@ -29,8 +28,6 @@ const OnlineRegistration = () => {
             <h1 style={{ color: "maroon" }}>GUARDIAN INFORMATION</h1>
             <GuardianInformation />
           </div>
-
-
         </Form>
       </div>
     </div>

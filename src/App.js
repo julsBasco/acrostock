@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <OnlineRegistration />
       {/* this is the correct item */}
+      nag load siya
     </div>
   );
 };
