@@ -22,12 +22,12 @@ const OnlineRegistration = () => {
 
           <div className="m-4">
             <h1 style={{ color: "maroon" }}>CONTACT DETAILS</h1>
-            <ContactDetails />
+            {/* <ContactDetails /> */}
           </div>
 
           <div className="m-4">
             <h1 style={{ color: "maroon" }}>GUARDIAN INFORMATION</h1>
-            <GuardianInformation />
+            {/* <GuardianInformation /> */}
           </div>
 
 
