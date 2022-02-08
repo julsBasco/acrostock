@@ -1,5 +1,4 @@
 import React from "react";
-import DropdownItems from "../online-registration/ContactDetails.js";
 import { Form } from "react-bootstrap";
 
 function ContactDetails() {
@@ -11,12 +10,26 @@ function ContactDetails() {
           <Form.Label>Mobile Number</Form.Label>
           <Form.Control type="number" placeholder="Mobile number" />
         </div>
+</div>
+        <div className="col">
+            <Form.Label>Email Address</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Email"
+            />
+          </div>
 
-      </div>
-    </Form.Group>
+          <div className="col">
+            <Form.Label>FB Account</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="FB Account"
+            />
+          </div>
+
+
+      </Form.Group>
   );
-
-
 
 }
 
