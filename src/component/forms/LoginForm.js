@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Form, Button, Dropdown } from "react-bootstrap";
 
 const LoginForm = () => {
@@ -31,9 +32,21 @@ const LoginForm = () => {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+      <div className="row justify-content-end">
+        <div className="col">
+          <div className="row justify-content-center text-center">
+            <Button variant="success" size="lg">
+              Login
+            </Button>
+            <h6>
+              Already have and account?{" "}
+              <span>
+                <Link to={"/create"}> Create account</Link>
+              </span>
+            </h6>
+          </div>
+        </div>
+      </div>
     </Form>
   );
 };

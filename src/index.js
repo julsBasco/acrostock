@@ -3,14 +3,49 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthProvider } from "./context/AuthContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import CreateAccount from "./pages/CreateAccount";
+import OnlineRegistration from "./pages/OnlineRegistration";
+import Dashboard from "./pages/auth/Dashboard";
+import CreateNew from "./pages/CreateNew";
+import dashboardReducer from "./store/reducers/dashboardReducer";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 
-//this is for the test of forking and pulling and pull request
+const store = createStore(dashboardReducer);
+
+//STORE > GLOBALIZED STATE
+
+//ACTION INCREMENT
+
+//REDUCER
+
+//DISPATCH
 
 ReactDOM.render(
   <React.StrictMode>
-    <AuthProvider>
-      <App />
-    </AuthProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Provider store={store}>
+              <App />
+            </Provider>
+          }
+        >
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Route>
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/create" element={<CreateNew />}>
+          <Route path="/create" element={<CreateAccount />} />
+          <Route path="info" element={<OnlineRegistration />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

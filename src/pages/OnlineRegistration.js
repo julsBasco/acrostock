@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import Address from "../component/forms/online-registration/Address";
 import BasicInformation from "../component/forms/online-registration/BasicInformation";
 import ContactDetails from "../component/forms/online-registration/ContactDetails";
@@ -29,6 +29,23 @@ const OnlineRegistration = () => {
             <GuardianInformation />
           </div>
         </Form>
+      </div>
+      <div className="container">
+        <div className="row justify-content-end">
+          <div className="col-3">
+            <div className="row justify-content-center text-center">
+              <Button variant="success" size="lg">
+                Success
+              </Button>
+              <h6>
+                Already have and account?{" "}
+                <span>
+                  <a>Login</a>
+                </span>
+              </h6>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
