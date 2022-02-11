@@ -1,17 +1,23 @@
 import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 import { createContext, useContext, useEffect, useState } from "react";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, createUserWithEmailAndPassword } from "firebase/auth";
-import {getFirestore, getDocs, collection} from "firebase/firestore";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  createUserWithEmailAndPassword,
+} from "firebase/auth";
+import { getFirestore, getDocs, collection } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCz2F-KG-qU0YkKvBsMLpzAIs50_bevAb8",
-  authDomain: "react-crud-8a873.firebaseapp.com",
-  projectId: "react-crud-8a873",
-  storageBucket: "react-crud-8a873.appspot.com",
-  messagingSenderId: "166762420977",
-  appId: "1:166762420977:web:559770bc50402984d2e750",
-  measurementId: "G-SXC3LTBG56"
+  apiKey: "AIzaSyDgrWWtOyYYdek2-VAC8io5BmbD5YxsCOw",
+  authDomain: "acrostock-ff5cf.firebaseapp.com",
+  projectId: "acrostock-ff5cf",
+  storageBucket: "acrostock-ff5cf.appspot.com",
+  messagingSenderId: "577762719670",
+  appId: "1:577762719670:web:3bafef12291ba9c75cb317",
+  measurementId: "G-B64DJKVVVN",
 };
 
 // Initialize Firebase
@@ -32,15 +38,15 @@ export const AuthProvider = ({ children }) => {
 
   const login = (userEmail, userPassword) => {
     return signInWithEmailAndPassword(auth, userEmail, userPassword);
-  }
+  };
 
   const logout = () => {
     return signOut(auth);
-  }
+  };
 
   const newUser = (userEmail, userPassword) => {
     return createUserWithEmailAndPassword(auth, userEmail, userPassword);
-  }
+  };
 
   const getUsers = () => {
     const querySnapshot = getDocs(collection(db, "users"));
@@ -50,17 +56,16 @@ export const AuthProvider = ({ children }) => {
     //   console.log(doc.id, " => ", doc.data());
     // });
     return querySnapshot;
-  }
+  };
 
   useEffect(() => {
-    const loggedInUser = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
-      setLoading(false);
-    })
+      setLoading(true);
+    });
 
-    return loggedInUser;
-  });
-
+    return unsubscribe;
+  }, []);
 
   const contexts = {
     currentUser,
@@ -68,13 +73,11 @@ export const AuthProvider = ({ children }) => {
     login,
     logout,
     getUsers,
-
-  }
+  };
 
   return (
     <AuthContext.Provider value={contexts}>
-      {!loading && children}
+      {loading && children}
     </AuthContext.Provider>
   );
-
-}
+};

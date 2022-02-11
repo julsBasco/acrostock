@@ -12,6 +12,7 @@ import CreateNew from "./pages/CreateNew";
 import dashboardReducer from "./store/reducers/dashboardReducer";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
+import { RequireAuth } from "./component/privateRoute";
 
 const store = createStore(dashboardReducer);
 
@@ -30,15 +31,24 @@ ReactDOM.render(
         <Route
           path="/"
           element={
-            <Provider store={store}>
-              <App />
-            </Provider>
+            <AuthProvider>
+              <RequireAuth>
+                <App />
+              </RequireAuth>
+            </AuthProvider>
           }
         >
           <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={
+            <AuthProvider>
+              <Login />
+            </AuthProvider>
+          }
+        />
 
         <Route path="/create" element={<CreateNew />}>
           <Route path="/create" element={<CreateAccount />} />

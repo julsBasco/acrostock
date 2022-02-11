@@ -8,13 +8,9 @@ import { toggleMeThis } from "./store/actions/dashboard";
 import { Outlet } from "react-router-dom";
 
 const App = () => {
-  const testingLang = useSelector((state) => state);
-  const dispatch = useDispatch();
-  console.log(testingLang);
   return (
     <div>
       <NavBar />
-      <button onClick={() => dispatch(toggleMeThis())}>click this</button>
 
       <Outlet />
     </div>
